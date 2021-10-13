@@ -4,12 +4,6 @@ var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var btn = document.querySelector(".random");
 
-// TODO
-// 3. Un boutton qui genere un gradient aleatoire
-
-function setGradientOnLoading() {
-    css = setGradient();
-}
 
 function generateRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -41,5 +35,5 @@ function setGradient() {
 
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
-window.addEventListener("load", setGradientOnLoading)
+window.addEventListener("load", setGradient)
 btn.addEventListener("click", setRandomColor)
